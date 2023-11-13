@@ -19,7 +19,7 @@ class UserService {
       url: 'https://jsonplaceholder.typicode.com/users',
     );
 
-    //?Api helperdan hata durumu döndüyse en cubitte bunu döndürme
+    //?Api helperdan hata durumu döndüyse 
     if (response.$1 != null) {
       return (response.$1, null);
     } else if (response.$2 != null) {
@@ -44,7 +44,7 @@ class UserService {
       url: 'https://jsonplaceholder.typicode.com/users?username=$searchText',
     );
 
-    //?Apiden hata durumu döndüyse
+ 
     if (response.$1 != null) {
       return (response.$1, null);
     } else if (response.$2 != null) {
